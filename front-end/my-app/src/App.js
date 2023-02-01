@@ -8,11 +8,11 @@ function App() {
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
 
-  // useEffect(() => {
-  //   fetch('http://localhost:8000/api//address/')
-  //   .then(r => r.json())
-  //   .then(data => console.log(data))
-  // })
+  useEffect(() => {
+    fetch('http://localhost:8000/api//games/')
+    .then(r => r.json())
+    .then(data => console.log(data))
+  })
 
   function handleClick(){
     fetch('http://localhost:8000/api//address/', {

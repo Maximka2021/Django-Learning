@@ -7,3 +7,7 @@ class Address(models.Model):
     email = models.EmailField(max_length=100)
     phone_number = models.CharField(max_length=100)
 
+class Games(models.Model):
+    title = models.CharField(max_length=50)
+    price = models.IntegerField(max_length=5)
+
